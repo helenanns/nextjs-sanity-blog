@@ -1,0 +1,241 @@
+🚀 ROADMAP — Headless Blog (Next.js + Sanity)
+🟢 FASE 1 — Fundação do Projeto
+🎯 Objetivo:
+
+Criar base sólida e profissional.
+
+✅ Setup inicial
+
+ Criar projeto com create-next-app (App Router + TypeScript)
+
+ Configurar ESLint + Prettier
+
+ Configurar estrutura limpa de pastas:
+
+/app
+/components
+/lib
+/services
+/types
+/utils
+
+ Configurar variáveis de ambiente
+
+ Criar layout base (Header, Footer, Container)
+
+🟢 FASE 2 — Integração com Sanity (Headless)
+🎯 Objetivo:
+
+Conectar CMS real e modelar conteúdo.
+
+✅ No Sanity:
+
+ Criar schema:
+
+Post
+
+Author
+
+Category
+
+SEO fields
+
+ Criar campos:
+
+title
+
+slug
+
+excerpt
+
+cover image
+
+rich content (Portable Text)
+
+publishedAt
+
+seoTitle
+
+seoDescription
+
+✅ No Next.js:
+
+ Criar cliente Sanity (lib/sanity.ts)
+
+ Criar queries GROQ
+
+ Criar página de listagem de posts (SSG)
+
+ Criar página dinâmica /blog/[slug] (SSG)
+
+🟢 FASE 3 — Renderização Estratégica
+🎯 Objetivo:
+
+Demonstrar domínio de SSR, SSG e ISR.
+
+Implementar:
+
+ Homepage → SSG
+
+ Blog listing → SSG
+
+ Post page → SSG + ISR (revalidate)
+
+ Página de busca → SSR
+
+ Demonstrar generateStaticParams
+
+ Implementar revalidateTag ou revalidatePath
+
+💡 No README explique:
+
+Why this page uses SSG and not SSR
+
+Recrutador ama isso.
+
+🟢 FASE 4 — Preview Mode (Diferencial forte)
+🎯 Objetivo:
+
+Mostrar conhecimento avançado.
+
+ Criar API route para preview
+
+ Habilitar draft mode
+
+ Mostrar post em preview antes de publicar
+
+ Criar botão "Exit Preview"
+
+🔥 Isso é nível profissional real.
+
+🟢 FASE 5 — SEO Estruturado
+🎯 Objetivo:
+
+Mostrar maturidade.
+
+ Metadata dinâmica (generateMetadata)
+
+ Open Graph
+
+ Twitter Cards
+
+ JSON-LD structured data
+
+ Sitemap
+
+ Robots.txt
+
+ Canonical URLs
+
+🟢 FASE 6 — Performance (Lighthouse 95+)
+🎯 Objetivo:
+
+Excelência técnica.
+
+ Otimização de imagens (Next/Image)
+
+ Lazy loading
+
+ Code splitting
+
+ Dynamic imports
+
+ Font optimization
+
+ Garantir Core Web Vitals verdes
+
+Meta:
+
+Performance 95+
+
+SEO 100
+
+Accessibility 95+
+
+🟢 FASE 7 — Testes
+Escolha:
+
+Playwright (mais moderno e impressiona mais)
+
+Implementar:
+
+ Teste homepage carrega
+
+ Teste navegação
+
+ Teste abertura de post
+
+ Teste preview mode
+
+ Teste meta tags
+
+🟢 FASE 8 — Deploy Profissional
+Vercel:
+
+ Variáveis de ambiente
+
+ Build sem warnings
+
+ Configurar domínio custom
+
+ Analytics ativado
+
+🟢 FASE 9 — README Estratégico
+
+Inclua:
+
+📌 Architecture decisions
+
+📌 Rendering strategy explanation
+
+📌 Why Sanity?
+
+📌 Performance results
+
+📌 Lighthouse screenshots
+
+📌 Tech stack justification
+
+Isso diferencia júnior de engenheiro.
+
+🎯 Extra (Se quiser ficar absurdo de bom)
+
+Dark mode
+
+Busca com Algolia
+
+Tag filtering
+
+Infinite scroll
+
+Rate limiting na API
+
+Error boundaries
+
+Loading skeletons
+
+Suspense streaming
+
+📅 Cronograma Realista
+Semana	Foco
+1	Setup + Sanity
+2	Renderização + Preview
+3	SEO + Performance
+4	Testes + Deploy + README
+🔥 Resultado
+
+Você terá um projeto que demonstra:
+
+Arquitetura moderna
+
+Headless CMS
+
+SSR / SSG / ISR
+
+SEO real
+
+Testes
+
+CI/CD
+
+Performance
