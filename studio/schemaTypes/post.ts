@@ -20,6 +20,13 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'excerpt',
+      title: 'Excerpt',
+      type: 'text',
+      rows: 3,
+      validation: (Rule) => Rule.required().min(20).max(200),
+    }),
+    defineField({
       name: 'author',
       title: 'Author',
       type: 'reference',
@@ -48,6 +55,27 @@ export default defineType({
       name: 'body',
       title: 'Body',
       type: 'blockContent',
+    }),
+    defineField({
+      name: 'seo',
+      title: 'SEO',
+      type: 'object',
+      fields: [
+        defineField({
+          name: 'title',
+          title: 'SEO Title',
+          type: 'string',
+          validation: (Rule) => Rule.max(60),
+        }),
+        defineField({
+          name: 'description',
+          title: 'SEO Description',
+          type: 'text',
+          rows: 2,
+          validation: (Rule) => Rule.max(160),
+        }),
+      ],
+      options: {collapsible: true, collapsed: true},
     }),
   ],
 
